@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Docentes do Curso</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="professores-frame" aria-labelledby="titulo-docentes">
+    <section class="intro">
+      <span class="tag">Corpo docente</span>
+      <h1 id="titulo-docentes">Conheça os professores do curso</h1>
+      <p>Passe o mouse sobre um professor para pausar a animação. Clique para ver uma mini bio e acessar o currículo Lattes.</p>
+    </section>
+
+    <section class="bubble-board" id="bubbleBoard" aria-label="Lista interativa de professores">
+      <!--
+        Para usar fotos reais:
+        1. Crie a pasta: assets/professores/
+        2. Salve as imagens com os nomes usados abaixo.
+        3. Formatos recomendados: JPG ou PNG, quadrado, pelo menos 300x300px.
+      -->
+
+      <button class="teacher-card" type="button" style="--x: 4%; --y: 10%; --duration: 9s; --delay: -1s; --float-x: 18px; --float-y: -16px;"
+        data-name="Aline Magalhães Pinto"
+        data-lattes="https://lattes.cnpq.br/9910639848117178"
+        data-bio="Docente do curso, com trajetória acadêmica registrada na Plataforma Lattes. Atua na formação, pesquisa e orientação em sua área de especialidade.">
+        <span class="teacher-photo" data-initials="AM">
+          <img src="assets/professores/aline-magalhaes-pinto.jpg" alt="Foto de Aline Magalhães Pinto" onerror="this.style.display='none'" />
+        </span>
+        <span class="teacher-name">Aline Magalhães Pinto</span>
+      </button>
+
+      <button class="teacher-card" type="button" style="--x: 21%; --y: 7%; --duration: 10s; --delay: -4s; --float-x: -14px; --float-y: 20px;"
+        data-name="Ana Lúcia Menezes de Andrade"
+        data-lattes="https://lattes.cnpq.br/3135226803336399"
+        data-bio="Docente do curso, com atuação acadêmica documentada no Currículo Lattes. Contribui para atividades de ensino, pesquisa e orientação.">
+        <span class="teacher-photo" data-initials="AA">
+          <img src="assets/professores/ana-lucia-menezes-de-andrade.jpg" alt="Foto de Ana Lúcia Menezes de Andrade" onerror="this.style.display='none'" />
+        </span>
+        <span class="teacher-name">Ana Lúcia Menezes de Andrade</span>
+      </button>
+
+      <button class="teacher-card destaque" type="button" style="--x: 42%; --y: 3%; --duration: 8s; --delay: -2s; --float-x: 22px; --float-y: 18px;"
+        data-name="André Guimarães Brasil"
+        data-lattes="https://lattes.cnpq.br/1380596704003182"
+        data-bio="Docente em destaque no curso. Possui produção acadêmica registrada na Plataforma Lattes e contribui para a formação dos estudantes por meio de ensino, pesquisa e orientação.">
+        <span class="badge">Destaque</span>
+        <span class="teacher-photo" data-initials="AB">
+          <img src="assets/professores/andre-guimaraes-brasil.jpg" alt="Foto de André Guimarães Brasil" onerror="this.style.display='none'" />
+        </span>
+        <span class="teacher-name">André Guimarães Brasil</span>
+      </button>
+
+      <button class="teacher-card destaque" type="button" style="--x: 65%; --y: 8%; --duration: 9.5s; --delay: -5s; --float-x: -18px; --float-y: -22px;"
+        data-name="César Geraldo Guimarães"
+        data-lattes="https://lattes.cnpq.br/1409672537920062"
+        data-bio="Docente em destaque no curso. Sua trajetória acadêmica está registrada no Currículo Lattes, com participação em atividades de ensino, pesquisa e orientação.">
+        <span class="badge">Destaque</span>
+        <span class="teacher-photo" data-initials="CG">
+          <img src="assets/professores/cesar-geraldo-guimaraes.jpg" alt="Foto de César Geraldo Guimarães" onerror="this.style.display='none'" />
+        </span>
+        <span class="teacher-name">César Geraldo Guimarães</span>
+      </button>
+
+      <button class="teacher-card" type="button" style="--x: 83%; --y: 13%; --duration: 11s; --delay: -3s; --float-x: 16px; --float-y: 16px;"
+        data-name="Cláudia Cardoso Mesquita"
+        data-lattes="https://lattes.cnpq.br/8854822609955247"
+        data-bio="Docente do curso, com percurso acadêmico registrado na Plataforma Lattes. Participa da formação dos estudantes em atividades de ensino e pesquisa.">
+        <span class="teacher-photo" data-initials="CM">
+          <img src="assets/professores/claudia-cardoso-mesquita.jpg" alt="Foto de Cláudia Cardoso Mesquita" onerror="this.style.display='none'" />
+        </span>
+        <span class="teacher-name">Cláudia Cardoso Mesquita</span>
+      </button>
+
+      <button class="teacher-card" type="button" style="--x: 10%; --y: 35%; --duration: 10.5s; --delay: -7s; --float-x: -20px; --float-y: 14px;"
+        data-name="Daniel Reizinger Bonomo"
+        data-lattes="https://lattes.cnpq.br/0875627840284200"
+        data-bio="Docente do curso, com informações acadêmicas disponíveis em seu Currículo Lattes. Atua em atividades de formação, pesquisa e orientação.">
+        <span class="teacher-photo" data-initials="DB">
+          <img src="assets/professores/daniel-reizinger-bonomo.jpg" alt="Foto de Daniel Reizinger Bonomo" onerror="this.style.display='none'" />
+        </span>
+        <span class="teacher-name">Daniel Reizinger Bonomo</span>
+      </button>
+
+      <button class="teacher-card" type="button" style="--x: 29%; --y: 29%; --duration: 8.5s; --delay: -6s; --float-x: 15px; --float-y: -20px;"
+        data-name="Davi Pessoa Carneiro Barbosa"
+        data-lattes="https://lattes.cnpq.br/4217258847468083"
+        data-bio="Docente do curso, com produção e trajetória acadêmica registradas na Plataforma Lattes. Contribui para o desenvolvimento acadêmico dos estudantes.">
+        <span class="teacher-photo" data-initials="DB">
+          <img src="assets/professores/davi-pessoa-carneiro-barbosa.jpg" alt="Foto de Davi Pessoa Carneiro Barbosa" onerror="this.style.display='none'" />
+        </span>
+        <span class="teacher-name">Davi Pessoa Carneiro Barbosa</span>
+      </button>
+
+      <button class="teacher-card destaque" type="button" style="--x: 50%; --y: 32%; --duration: 9s; --delay: -8s; --float-x: -16px; --float-y: 22px;"
+        data-name="Denilson Lopes Silva"
+        data-lattes="https://lattes.cnpq.br/2410649424987983"
+        data-bio="Docente em destaque no curso. Possui trajetória acadêmica registrada no Currículo Lattes e contribui para atividades de ensino, pesquisa e orientação.">
+        <span class="badge">Destaque</span>
+        <span class="teacher-photo" data-initials="DL">
+          <img src="assets/professores/denilson-lopes-silva.jpg" alt="Foto de Denilson Lopes Silva" onerror="this.style.display='none'" />
+        </span>
+        <span class="teacher-name">Denilson Lopes Silva</span>
+      </button>
+
+      <button class="teacher-card" type="button" style="--x: 72%; --y: 33%; --duration: 10s; --delay: -2.5s; --float-x: 18px; --float-y: -18px;"
+        data-name="Eduardo Antônio de Jesus"
+        data-lattes="https://lattes.cnpq.br/7968613012661718"
+        data-bio="Docente do curso, com atuação acadêmica registrada na Plataforma Lattes. Participa de atividades de ensino, pesquisa e formação.">
+        <span class="teacher-photo" data-initials="EJ">
+          <img src="assets/professores/eduardo-antonio-de-jesus.jpg" alt="Foto de Eduardo Antônio de Jesus" onerror="this.style.display='none'" />
+        </span>
+        <span class="teacher-name">Eduardo Antônio de Jesus</span>
+      </button>
+
+      <button class="teacher-card" type="button" style="--x: 88%; --y: 39%; --duration: 11.5s; --delay: -9s; --float-x: -20px; --float-y: 15px;"
+        data-name="Elisa Maria Amorim Vieira"
+        data-lattes="https://lattes.cnpq.br/1781402001194178"
+        data-bio="Docente do curso, com currículo acadêmico disponível na Plataforma Lattes. Atua na formação dos estudantes e em atividades de pesquisa.">
+        <span class="teacher-photo" data-initials="EV">
+          <img src="assets/professores/elisa-maria-amorim-vieira.jpg" alt="Foto de Elisa Maria Amorim Vieira" onerror="this.style.display='none'" />
+        </span>
+        <span class="teacher-name">Elisa Maria Amorim Vieira</span>
+      </button>
+
+      <button class="teacher-card" type="button" style="--x: 5%; --y: 63%; --duration: 9.8s; --delay: -4.5s; --float-x: 20px; --float-y: -14px;"
+        data-name="Gustavo Silveira Ribeiro"
+        data-lattes="https://lattes.cnpq.br/1881471670554095"
+        data-bio="Docente do curso, com trajetória acadêmica registrada na Plataforma Lattes. Contribui para atividades de ensino, pesquisa e orientação.">
+        <span class="teacher-photo" data-initials="GR">
+          <img src="assets/professores/gustavo-silveira-ribeiro.jpg" alt="Foto de Gustavo Silveira Ribeiro" onerror="this.style.display='none'" />
+        </span>
+        <span class="teacher-name">Gustavo Silveira Ribeiro</span>
+      </button>
+
+      <button class="teacher-card" type="button" style="--x: 23%; --y: 58%; --duration: 8.8s; --delay: -1.5s; --float-x: -16px; --float-y: -20px;"
+        data-name="Helcira Maria Rodrigues de Lima"
+        data-lattes="https://lattes.cnpq.br/0333659979207635"
+        data-bio="Docente do curso, com atuação acadêmica documentada no Currículo Lattes. Participa de atividades formativas e de pesquisa.">
+        <span class="teacher-photo" data-initials="HL">
+          <img src="assets/professores/helcira-maria-rodrigues-de-lima.jpg" alt="Foto de Helcira Maria Rodrigues de Lima" onerror="this.style.display='none'" />
+        </span>
+        <span class="teacher-name">Helcira Maria Rodrigues de Lima</span>
+      </button>
+
+      <button class="teacher-card" type="button" style="--x: 43%; --y: 62%; --duration: 10.8s; --delay: -7.5s; --float-x: 14px; --float-y: 19px;"
+        data-name="Márcia Maria Valle Arbex"
+        data-lattes="https://lattes.cnpq.br/6292141095883897"
+        data-bio="Docente do curso, com informações acadêmicas disponíveis na Plataforma Lattes. Atua em atividades de ensino, pesquisa e orientação.">
+        <span class="teacher-photo" data-initials="MA">
+          <img src="assets/professores/marcia-maria-valle-arbex.jpg" alt="Foto de Márcia Maria Valle Arbex" onerror="this.style.display='none'" />
+        </span>
+        <span class="teacher-name">Márcia Maria Valle Arbex</span>
+      </button>
+
+      <button class="teacher-card" type="button" style="--x: 62%; --y: 59%; --duration: 9.2s; --delay: -3.2s; --float-x: -15px; --float-y: 17px;"
+        data-name="Pedro Cardoso Aspahan"
+        data-lattes="https://lattes.cnpq.br/2254581490025260"
+        data-bio="Docente do curso, com trajetória acadêmica registrada no Currículo Lattes. Contribui para atividades de ensino, pesquisa e formação.">
+        <span class="teacher-photo" data-initials="PA">
+          <img src="assets/professores/pedro-cardoso-aspahan.jpg" alt="Foto de Pedro Cardoso Aspahan" onerror="this.style.display='none'" />
+        </span>
+        <span class="teacher-name">Pedro Cardoso Aspahan</span>
+      </button>
+
+      <button class="teacher-card" type="button" style="--x: 81%; --y: 64%; --duration: 10.2s; --delay: -5.8s; --float-x: 19px; --float-y: -21px;"
+        data-name="Pedro Henrique Trindade Kalil Auad"
+        data-lattes="https://lattes.cnpq.br/7412819991957254"
+        data-bio="Docente do curso, com currículo acadêmico disponível na Plataforma Lattes. Atua em atividades de ensino, pesquisa e orientação.">
+        <span class="teacher-photo" data-initials="PK">
+          <img src="assets/professores/pedro-henrique-trindade-kalil-auad.jpg" alt="Foto de Pedro Henrique Trindade Kalil Auad" onerror="this.style.display='none'" />
+        </span>
+        <span class="teacher-name">Pedro Henrique Trindade Kalil Auad</span>
+      </button>
+
+      <button class="teacher-card" type="button" style="--x: 15%; --y: 82%; --duration: 9.6s; --delay: -6.4s; --float-x: -19px; --float-y: -15px;"
+        data-name="Pedro Rena Todeschini"
+        data-lattes="https://lattes.cnpq.br/6011423524082677"
+        data-bio="Docente do curso, com atuação acadêmica registrada na Plataforma Lattes. Participa da formação dos estudantes em atividades de ensino e pesquisa.">
+        <span class="teacher-photo" data-initials="PT">
+          <img src="assets/professores/pedro-rena-todeschini.jpg" alt="Foto de Pedro Rena Todeschini" onerror="this.style.display='none'" />
+        </span>
+        <span class="teacher-name">Pedro Rena Todeschini</span>
+      </button>
+
+      <button class="teacher-card" type="button" style="--x: 47%; --y: 84%; --duration: 10.6s; --delay: -8.4s; --float-x: 15px; --float-y: -18px;"
+        data-name="Roberto Alexandre do Carmo Said"
+        data-lattes="https://lattes.cnpq.br/0894958518829730"
+        data-bio="Docente do curso, com trajetória acadêmica documentada no Currículo Lattes. Atua em atividades de ensino, pesquisa e orientação.">
+        <span class="teacher-photo" data-initials="RS">
+          <img src="assets/professores/roberto-alexandre-do-carmo-said.jpg" alt="Foto de Roberto Alexandre do Carmo Said" onerror="this.style.display='none'" />
+        </span>
+        <span class="teacher-name">Roberto Alexandre do Carmo Said</span>
+      </button>
+
+      <button class="teacher-card" type="button" style="--x: 76%; --y: 83%; --duration: 8.7s; --delay: -2.8s; --float-x: -18px; --float-y: 20px;"
+        data-name="Wander Melo Miranda"
+        data-lattes="https://lattes.cnpq.br/6849976549025990"
+        data-bio="Docente do curso, com currículo acadêmico disponível na Plataforma Lattes. Contribui para atividades de ensino, pesquisa e formação.">
+        <span class="teacher-photo" data-initials="WM">
+          <img src="assets/professores/wander-melo-miranda.jpg" alt="Foto de Wander Melo Miranda" onerror="this.style.display='none'" />
+        </span>
+        <span class="teacher-name">Wander Melo Miranda</span>
+      </button>
+    </section>
+  </main>
+
+  <div class="modal-overlay" id="teacherModal" aria-hidden="true">
+    <article class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" type="button" id="modalClose" aria-label="Fechar pop-up">×</button>
+      <span class="modal-label">Mini bio</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalBio"></p>
+      <a id="modalLattes" class="lattes-link" href="#" target="_blank" rel="noopener noreferrer">Ver currículo Lattes</a>
+    </article>
+  </div>
+
+  <script>
+    const board = document.getElementById('bubbleBoard');
+    const cards = document.querySelectorAll('.teacher-card');
+    const modal = document.getElementById('teacherModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalBio = document.getElementById('modalBio');
+    const modalLattes = document.getElementById('modalLattes');
+    const modalClose = document.getElementById('modalClose');
+
+    cards.forEach((card) => {
+      card.addEventListener('mouseenter', () => {
+        board.classList.add('is-paused');
+      });
+
+      card.addEventListener('mouseleave', () => {
+        board.classList.remove('is-paused');
+      });
+
+      card.addEventListener('focus', () => {
+        board.classList.add('is-paused');
+      });
+
+      card.addEventListener('blur', () => {
+        board.classList.remove('is-paused');
+      });
+
+      card.addEventListener('click', () => {
+        modalTitle.textContent = card.dataset.name;
+        modalBio.textContent = card.dataset.bio;
+        modalLattes.href = card.dataset.lattes;
+        modal.classList.add('is-open');
+        modal.setAttribute('aria-hidden', 'false');
+        modalClose.focus();
+      });
+    });
+
+    function closeModal() {
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+    }
+
+    modalClose.addEventListener('click', closeModal);
+
+    modal.addEventListener('click', (event) => {
+      if (event.target === modal) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && modal.classList.contains('is-open')) {
+        closeModal();
+      }
+    });
+  </script>
+</body>
+</html>
