@@ -30,7 +30,7 @@ body {
   min-height: 640px;
   overflow: hidden;
   position: relative;
-  padding: clamp(18px, 3vw, 34px);
+  padding: clamp(100px, 3vw, 34px);
   background:
     radial-gradient(circle at 15% 20%, rgba(117, 185, 188, 0.32), transparent 28%),
     radial-gradient(circle at 86% 12%, rgba(161, 9, 47, 0.14), transparent 30%),
