@@ -27,10 +27,10 @@ body {
 
 .professores-frame {
   width: 100%;
-  min-height: 640px;
+  min-height: 690px;
   overflow: hidden;
   position: relative;
-  padding: clamp(100px, 3vw, 34px);
+  padding: clamp(18px, 2.4vw, 30px);
   background:
     radial-gradient(circle at 15% 20%, rgba(117, 185, 188, 0.32), transparent 28%),
     radial-gradient(circle at 86% 12%, rgba(161, 9, 47, 0.14), transparent 30%),
@@ -112,17 +112,17 @@ body {
 .bubble-board {
   position: relative;
   width: 100%;
-  height: clamp(520px, 62vw, 720px);
-  margin-top: clamp(16px, 2vw, 28px);
+  height: clamp(590px, 64vw, 760px);
+  margin-top: clamp(4px, 1vw, 12px);
 }
 
 .teacher-card {
-  --size: clamp(92px, 9.6vw, 132px);
+  --size: clamp(82px, 8.3vw, 116px);
   position: absolute;
   left: var(--x);
   top: var(--y);
-  width: calc(var(--size) + 28px);
-  min-height: calc(var(--size) + 58px);
+  width: calc(var(--size) + 38px);
+  min-height: calc(var(--size) + 64px);
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
@@ -186,7 +186,7 @@ body {
 }
 
 .teacher-name {
-  width: min(160px, 24vw);
+  width: min(172px, 24vw);
   padding: 6px 9px;
   border-radius: 999px;
   background: rgba(2, 31, 61, 0.84);
@@ -208,7 +208,7 @@ body {
 }
 
 .teacher-card.destaque {
-  --size: clamp(108px, 11vw, 154px);
+  --size: clamp(96px, 9.8vw, 136px);
   background: rgba(161, 9, 47, 0.10);
 }
 
@@ -362,7 +362,7 @@ body {
     height: auto;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 16px 10px;
+    gap: 22px 14px;
     margin-top: 24px;
   }
 
@@ -407,7 +407,7 @@ body {
 
   .bubble-board {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 14px 8px;
+    gap: 18px 10px;
   }
 
   .teacher-card,
